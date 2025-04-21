@@ -1,0 +1,44 @@
+speakeasyVersion: 1.535.1
+sources:
+    Nkwa Pay API:
+        sourceNamespace: nkwa-pay-api
+        sourceRevisionDigest: sha256:f193baf6db33f9bb670bcc89debcf3821748383b433e3d5de7c7fa2b3cc04e21
+        sourceBlobDigest: sha256:2de38d203bfb62a61ca7d6244347225694f99b199c6395e8557060ad8009c19d
+        tags:
+            - latest
+            - 1.0.0
+targets:
+    pay:
+        source: Nkwa Pay API
+        sourceNamespace: nkwa-pay-api
+        sourceRevisionDigest: sha256:f193baf6db33f9bb670bcc89debcf3821748383b433e3d5de7c7fa2b3cc04e21
+        sourceBlobDigest: sha256:2de38d203bfb62a61ca7d6244347225694f99b199c6395e8557060ad8009c19d
+        codeSamplesNamespace: nkwa-pay-api-java-code-samples
+        codeSamplesRevisionDigest: sha256:218bb552486d974e76b7aeba391ab08df499749eea343704c4c2a47433a8fa1d
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        Nkwa Pay API:
+            inputs:
+                - location: /Users/ebaneck/Downloads/nkwa-pay-openapi.json
+            overlays:
+                - location: .speakeasy/speakeasy-modifications-overlay.yaml
+            registry:
+                location: registry.speakeasyapi.dev/nkwa/pay/nkwa-pay-api
+    targets:
+        pay:
+            target: java
+            source: Nkwa Pay API
+            publish:
+                java:
+                    ossrhUsername: $ossrh_username
+                    ossrhPassword: $ossrh_password
+                    gpgSecretKey: $java_gpg_secret_key
+                    gpgPassPhrase: $java_gpg_passphrase
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/nkwa/pay/nkwa-pay-api-java-code-samples
+                labelOverride:
+                    fixedValue: Java (SDK)
+                blocking: false

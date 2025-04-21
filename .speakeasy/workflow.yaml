@@ -1,0 +1,26 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    Nkwa Pay API:
+        inputs:
+            - location: /Users/ebaneck/Downloads/nkwa-pay-openapi.json
+        overlays:
+            - location: .speakeasy/speakeasy-modifications-overlay.yaml
+        registry:
+            location: registry.speakeasyapi.dev/nkwa/pay/nkwa-pay-api
+targets:
+    pay:
+        target: java
+        source: Nkwa Pay API
+        publish:
+            java:
+                ossrhUsername: $ossrh_username
+                ossrhPassword: $ossrh_password
+                gpgSecretKey: $java_gpg_secret_key
+                gpgPassPhrase: $java_gpg_passphrase
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/nkwa/pay/nkwa-pay-api-java-code-samples
+            labelOverride:
+                fixedValue: Java (SDK)
+            blocking: false
