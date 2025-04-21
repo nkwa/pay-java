@@ -1,0 +1,175 @@
+lockVersion: 2.0.0
+id: 056a9d10-898b-46ab-b35c-78f83342995f
+management:
+  docChecksum: 8df1b4f32a71eaad6a9a85cfc6d66f68
+  docVersion: 1.0.0
+  speakeasyVersion: 1.535.1
+  generationVersion: 2.585.2
+  releaseVersion: 0.1.2
+  configChecksum: 8d7157033c56bc063239d47d650ef556
+  published: true
+features:
+  java:
+    additionalDependencies: 0.1.0
+    core: 3.37.1
+    flattening: 2.81.1
+    globalSecurity: 2.82.8
+    globalSecurityCallbacks: 0.1.0
+    globalSecurityFlattening: 0.1.0
+    globalServerURLs: 2.82.1
+    groups: 2.81.2
+    nameOverrides: 2.81.3
+    sdkHooks: 1.0.0
+generatedFiles:
+  - .gitattributes
+  - USAGE.md
+  - build.gradle
+  - docs/models/components/Availability.md
+  - docs/models/components/Operation.md
+  - docs/models/components/Operator.md
+  - docs/models/components/Payment.md
+  - docs/models/components/PaymentRequest.md
+  - docs/models/components/PaymentStatus.md
+  - docs/models/components/PaymentType.md
+  - docs/models/components/Security.md
+  - docs/models/components/Status.md
+  - docs/models/components/TelecomOperator.md
+  - docs/models/components/Type.md
+  - docs/models/errors/HttpError.md
+  - docs/models/operations/GetAvailabilityResponse.md
+  - docs/models/operations/GetPaymentsIdRequest.md
+  - docs/models/operations/GetPaymentsIdResponse.md
+  - docs/models/operations/PostCollectResponse.md
+  - docs/models/operations/PostDisburseResponse.md
+  - docs/sdks/availability/README.md
+  - docs/sdks/operators/README.md
+  - docs/sdks/pay/README.md
+  - docs/sdks/payments/README.md
+  - gradle.properties
+  - gradle/wrapper/gradle-wrapper.jar
+  - gradle/wrapper/gradle-wrapper.properties
+  - gradlew
+  - gradlew.bat
+  - settings.gradle
+  - src/main/java/org/nkwa/pay/pay_sdk/Availability.java
+  - src/main/java/org/nkwa/pay/pay_sdk/Operators.java
+  - src/main/java/org/nkwa/pay/pay_sdk/Pay.java
+  - src/main/java/org/nkwa/pay/pay_sdk/Payments.java
+  - src/main/java/org/nkwa/pay/pay_sdk/SDKConfiguration.java
+  - src/main/java/org/nkwa/pay/pay_sdk/SecuritySource.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/components/Availability.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/components/Operation.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/components/Operator.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/components/Payment.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/components/PaymentRequest.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/components/PaymentStatus.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/components/PaymentType.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/components/Security.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/components/Status.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/components/TelecomOperator.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/components/Type.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/errors/APIException.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/errors/AuthException.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/errors/HttpError.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/operations/GetAvailabilityRequestBuilder.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/operations/GetAvailabilityResponse.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/operations/GetPaymentsIdRequest.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/operations/GetPaymentsIdRequestBuilder.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/operations/GetPaymentsIdResponse.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/operations/PostCollectRequestBuilder.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/operations/PostCollectResponse.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/operations/PostDisburseRequestBuilder.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/operations/PostDisburseResponse.java
+  - src/main/java/org/nkwa/pay/pay_sdk/models/operations/SDKMethodInterfaces.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/BackoffStrategy.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/BigDecimalString.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/BigIntegerString.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/Constants.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/Deserializers.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/EventStream.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/EventStreamLineReader.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/EventStreamMessage.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/EventStreamReader.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/FormMetadata.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/HTTPClient.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/HTTPRequest.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/HasSecurity.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/HeaderMetadata.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/Helpers.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/Hook.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/Hooks.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/JSON.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/LazySingletonValue.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/Metadata.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/Multipart.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/MultipartFormMetadata.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/NameValue.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/OneOfDeserializer.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/Options.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/PathParamsMetadata.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/QueryEncoding.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/QueryParameter.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/QueryParameters.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/QueryParamsMetadata.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/RecordingClient.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/RequestBody.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/RequestMetadata.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/Response.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/Retries.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/RetryConfig.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/Security.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/SecurityMetadata.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/SerializedBody.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/SessionManager.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/SpeakeasyHTTPClient.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/SpeakeasyMetadata.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/TypedObject.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/Types.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/Utf8UrlEncoder.java
+  - src/main/java/org/nkwa/pay/pay_sdk/utils/Utils.java
+examples:
+  get_/payments/{id}:
+    speakeasy-default-get-/payments/{id}:
+      parameters:
+        path:
+          id: "96e9ed79-9fef-44a6-9435-0625338ca86a"
+      responses:
+        "200":
+          application/json: {}
+        "401":
+          application/json: {}
+        "500":
+          application/json: {}
+  post_/collect:
+    speakeasy-default-post-/collect:
+      requestBody:
+        application/json: {"amount": 433642, "phoneNumber": "824.805.0012 x8298"}
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+        "500":
+          application/json: {}
+  post_/disburse:
+    speakeasy-default-post-/disburse:
+      requestBody:
+        application/json: {"amount": 410119, "phoneNumber": "923.242.7389 x02568"}
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+        "500":
+          application/json: {}
+  get_/availability:
+    speakeasy-default-get-/availability:
+      responses:
+        "200":
+          application/json: [{}, {}, {}]
+        "401":
+          application/json: {}
+        "500":
+          application/json: {}
+examplesVersion: 1.0.1
+generatedTests: {}
