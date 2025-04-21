@@ -85,7 +85,7 @@ public class Application {
 
         PaymentRequest req = PaymentRequest.builder()
                 .amount(433642L)
-                .phoneNumber("824.805.0012 x8298")
+                .phoneNumber("237650000000")
                 .build();
 
         PostCollectResponse res = sdk.payments().collect()
@@ -142,7 +142,7 @@ public class Application {
 
         PaymentRequest req = PaymentRequest.builder()
                 .amount(410119L)
-                .phoneNumber("923.242.7389 x02568")
+                .phoneNumber("237650000000")
                 .build();
 
         PostDisburseResponse res = sdk.payments().disburse()
