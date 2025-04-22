@@ -46,7 +46,7 @@ jar {
     dependsOn(":generatePomFileForMavenPublication")
     archiveBaseName = "${artifactId}"
 
-    into("META-INF/maven/org.nkwa.pay/pay-sdk") {
+    into("META-INF/maven/io.github.nkwa/pay-sdk") {
         from("$buildDir/pom.xml")
     }
 }
@@ -101,19 +101,19 @@ publishing {
         maven(MavenPublication) {
             // note that properties can't yet be used below!
             // https://github.com/gradle/gradle/issues/18619
-            groupId = "org.nkwa.pay"
+            groupId = "io.github.nkwa"
             artifactId = "pay-sdk"
-            version = "0.1.3"
+            version = "0.1.4"
 
             from components.java
 
             pom {
-                name = 'My Company Java SDK'
-                description = 'SDK enabling Java developers to easily integrate with the My Company API.'
-                url = 'https://github.com/owner/repo'
+                name = 'Nkwa Tech Java SDK'
+                description = 'SDK enabling Java developers to easily integrate with the Nkwa Tech API.'
+                url = 'https://github.com/nkwa/pay-java'
                 scm {
-                    url = 'github.com/owner/repo'
-                    connection = 'scm:git:ssh://git@github.com/owner/repo.git'
+                    url = 'github.com/nkwa/pay-java'
+                    connection = 'scm:git:ssh://git@github.com/nkwa/pay-java.git'
                 }
                 licenses {
                     license {
@@ -123,14 +123,14 @@ publishing {
                 }
                 developers {
                     developer {
-                        name = 'My Company'
-                        organization = 'My Company'
-                        email = 'info@mycompany.com'
+                        name = 'Nkwa Tech'
+                        organization = 'Nkwa Tech'
+                        email = 'info@mynkwa.com'
                     }
                 }
                 organization {
-                    name = 'My Company'
-                    url = 'www.mycompany.com'
+                    name = 'Nkwa Tech'
+                    url = 'www.mynkwa.com'
                 }
             }
         }

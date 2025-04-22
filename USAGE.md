@@ -2,10 +2,10 @@
 ```java
 package hello.world;
 
+import io.github.nkwa.pay_sdk.Pay;
+import io.github.nkwa.pay_sdk.models.errors.HttpError;
+import io.github.nkwa.pay_sdk.models.operations.GetPaymentsIdResponse;
 import java.lang.Exception;
-import org.nkwa.pay.pay_sdk.Pay;
-import org.nkwa.pay.pay_sdk.models.errors.HttpError;
-import org.nkwa.pay.pay_sdk.models.operations.GetPaymentsIdResponse;
 
 public class Application {
 

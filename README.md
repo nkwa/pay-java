@@ -33,15 +33,15 @@ The samples below show how a published SDK artifact is used:
 
 Gradle:
 ```groovy
-implementation 'org.nkwa.pay:pay-sdk:0.1.3'
+implementation 'io.github.nkwa:pay-sdk:0.1.4'
 ```
 
 Maven:
 ```xml
 <dependency>
-    <groupId>org.nkwa.pay</groupId>
+    <groupId>io.github.nkwa</groupId>
     <artifactId>pay-sdk</artifactId>
-    <version>0.1.3</version>
+    <version>0.1.4</version>
 </dependency>
 ```
 
@@ -91,10 +91,10 @@ Another option is to set the System property `-Djdk.httpclient.HttpClient.log=al
 ```java
 package hello.world;
 
+import io.github.nkwa.pay_sdk.Pay;
+import io.github.nkwa.pay_sdk.models.errors.HttpError;
+import io.github.nkwa.pay_sdk.models.operations.GetPaymentsIdResponse;
 import java.lang.Exception;
-import org.nkwa.pay.pay_sdk.Pay;
-import org.nkwa.pay.pay_sdk.models.errors.HttpError;
-import org.nkwa.pay.pay_sdk.models.operations.GetPaymentsIdResponse;
 
 public class Application {
 
@@ -131,10 +131,10 @@ To authenticate with the API the `apiKeyAuth` parameter must be set when initial
 ```java
 package hello.world;
 
+import io.github.nkwa.pay_sdk.Pay;
+import io.github.nkwa.pay_sdk.models.errors.HttpError;
+import io.github.nkwa.pay_sdk.models.operations.GetPaymentsIdResponse;
 import java.lang.Exception;
-import org.nkwa.pay.pay_sdk.Pay;
-import org.nkwa.pay.pay_sdk.models.errors.HttpError;
-import org.nkwa.pay.pay_sdk.models.operations.GetPaymentsIdResponse;
 
 public class Application {
 
@@ -197,10 +197,10 @@ By default, an API error will throw a `models/errors/APIException` exception. Wh
 ```java
 package hello.world;
 
+import io.github.nkwa.pay_sdk.Pay;
+import io.github.nkwa.pay_sdk.models.errors.HttpError;
+import io.github.nkwa.pay_sdk.models.operations.GetPaymentsIdResponse;
 import java.lang.Exception;
-import org.nkwa.pay.pay_sdk.Pay;
-import org.nkwa.pay.pay_sdk.models.errors.HttpError;
-import org.nkwa.pay.pay_sdk.models.operations.GetPaymentsIdResponse;
 
 public class Application {
 
@@ -231,10 +231,10 @@ The default server can be overridden globally using the `.serverURL(String serve
 ```java
 package hello.world;
 
+import io.github.nkwa.pay_sdk.Pay;
+import io.github.nkwa.pay_sdk.models.errors.HttpError;
+import io.github.nkwa.pay_sdk.models.operations.GetPaymentsIdResponse;
 import java.lang.Exception;
-import org.nkwa.pay.pay_sdk.Pay;
-import org.nkwa.pay.pay_sdk.models.errors.HttpError;
-import org.nkwa.pay.pay_sdk.models.operations.GetPaymentsIdResponse;
 
 public class Application {
 

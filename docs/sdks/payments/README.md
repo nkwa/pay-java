@@ -18,10 +18,10 @@ Get the payment (collection or disbursement) with the specified ID.
 ```java
 package hello.world;
 
+import io.github.nkwa.pay_sdk.Pay;
+import io.github.nkwa.pay_sdk.models.errors.HttpError;
+import io.github.nkwa.pay_sdk.models.operations.GetPaymentsIdResponse;
 import java.lang.Exception;
-import org.nkwa.pay.pay_sdk.Pay;
-import org.nkwa.pay.pay_sdk.models.errors.HttpError;
-import org.nkwa.pay.pay_sdk.models.operations.GetPaymentsIdResponse;
 
 public class Application {
 
@@ -69,11 +69,11 @@ Collect a payment from a phone number.
 ```java
 package hello.world;
 
+import io.github.nkwa.pay_sdk.Pay;
+import io.github.nkwa.pay_sdk.models.components.PaymentRequest;
+import io.github.nkwa.pay_sdk.models.errors.HttpError;
+import io.github.nkwa.pay_sdk.models.operations.PostCollectResponse;
 import java.lang.Exception;
-import org.nkwa.pay.pay_sdk.Pay;
-import org.nkwa.pay.pay_sdk.models.components.PaymentRequest;
-import org.nkwa.pay.pay_sdk.models.errors.HttpError;
-import org.nkwa.pay.pay_sdk.models.operations.PostCollectResponse;
 
 public class Application {
 
@@ -126,11 +126,11 @@ Disburse a payment from your balance to a phone number.
 ```java
 package hello.world;
 
+import io.github.nkwa.pay_sdk.Pay;
+import io.github.nkwa.pay_sdk.models.components.PaymentRequest;
+import io.github.nkwa.pay_sdk.models.errors.HttpError;
+import io.github.nkwa.pay_sdk.models.operations.PostDisburseResponse;
 import java.lang.Exception;
-import org.nkwa.pay.pay_sdk.Pay;
-import org.nkwa.pay.pay_sdk.models.components.PaymentRequest;
-import org.nkwa.pay.pay_sdk.models.errors.HttpError;
-import org.nkwa.pay.pay_sdk.models.operations.PostDisburseResponse;
 
 public class Application {
 
