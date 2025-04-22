@@ -84,7 +84,7 @@ public class Application {
             .build();
 
         PaymentRequest req = PaymentRequest.builder()
-                .amount(433642L)
+                .amount(1000L)
                 .phoneNumber("237650000000")
                 .build();
 
@@ -141,7 +141,7 @@ public class Application {
             .build();
 
         PaymentRequest req = PaymentRequest.builder()
-                .amount(410119L)
+                .amount(1000L)
                 .phoneNumber("237650000000")
                 .build();
 
