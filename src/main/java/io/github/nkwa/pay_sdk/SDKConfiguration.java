@@ -28,7 +28,7 @@ class SDKConfiguration {
     public int serverIdx = 0;
     private static final String LANGUAGE = "java";
     public static final String OPENAPI_DOC_VERSION = "1.0.0";
-    public static final String SDK_VERSION = "0.1.5";
+    public static final String SDK_VERSION = "0.1.6";
     public static final String GEN_VERSION = "2.588.0";
     private static final String BASE_PACKAGE = "io.github.nkwa.pay_sdk";
     public static final String USER_AGENT = 
