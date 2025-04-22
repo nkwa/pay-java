@@ -33,7 +33,7 @@ The samples below show how a published SDK artifact is used:
 
 Gradle:
 ```groovy
-implementation 'io.github.nkwa:pay-sdk:0.1.4'
+implementation 'io.github.nkwa:pay-sdk:0.1.5'
 ```
 
 Maven:
@@ -41,7 +41,7 @@ Maven:
 <dependency>
     <groupId>io.github.nkwa</groupId>
     <artifactId>pay-sdk</artifactId>
-    <version>0.1.4</version>
+    <version>0.1.5</version>
 </dependency>
 ```
 
