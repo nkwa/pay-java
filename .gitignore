@@ -1,3 +1,5 @@
+**/.speakeasy/temp/
+**/.speakeasy/logs/
 .speakeasy/temp/
 # Ignore Gradle project-specific cache directory
 .gradle
