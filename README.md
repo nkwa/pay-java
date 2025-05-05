@@ -33,7 +33,7 @@ The samples below show how a published SDK artifact is used:
 
 Gradle:
 ```groovy
-implementation 'io.github.nkwa:pay-sdk:0.1.7'
+implementation 'io.github.nkwa:pay-sdk:0.1.8'
 ```
 
 Maven:
@@ -41,7 +41,7 @@ Maven:
 <dependency>
     <groupId>io.github.nkwa</groupId>
     <artifactId>pay-sdk</artifactId>
-    <version>0.1.7</version>
+    <version>0.1.8</version>
 </dependency>
 ```
 
@@ -241,7 +241,7 @@ public class Application {
     public static void main(String[] args) throws HttpError, HttpError, Exception {
 
         Pay sdk = Pay.builder()
-                .serverURL("https://api.staging.nkwapay.mynkwa.com")
+                .serverURL("https://api.pay.staging.mynkwa.com")
                 .apiKeyAuth("<YOUR_API_KEY_HERE>")
             .build();
 

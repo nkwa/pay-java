@@ -27,7 +27,7 @@ public class Pay {
         /**
          * Staging server
          */
-        "https://api.staging.nkwapay.mynkwa.com",
+        "https://api.pay.staging.mynkwa.com",
     };
 
     private final Payments payments;

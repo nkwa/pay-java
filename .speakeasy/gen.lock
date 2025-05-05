@@ -1,12 +1,13 @@
 lockVersion: 2.0.0
 id: 056a9d10-898b-46ab-b35c-78f83342995f
 management:
-  docChecksum: c2d93ac2e4579b3b5a1b0351aa5ec9d0
+  docChecksum: b6aa7fe30cea77348300bad688d948ee
   docVersion: 1.0.0
-  speakeasyVersion: 1.540.0
-  generationVersion: 2.593.3
-  releaseVersion: 0.1.7
-  configChecksum: 7c39535b09748723b71565393b6d8851
+  speakeasyVersion: 1.542.1
+  generationVersion: 2.597.9
+  releaseVersion: 0.1.8
+  configChecksum: f9ceb6de9723f16d5b6bab1bc8c534f3
+  repoURL: https://github.com/nkwa/pay-java.git
   published: true
 features:
   java:
